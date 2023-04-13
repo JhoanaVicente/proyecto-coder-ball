@@ -7,11 +7,11 @@
     box-sizing: border-box;
 }
 
-
-
 body {
     background-image: url("./background_image_1.png");
     background-size: 100%;
+    background-position: center;
+    background-size: cover;
     color: white;
     font-family: 'Inter', sans-serif;
 }
@@ -24,6 +24,10 @@ body {
     align-items: center;
 }
 
+.logo-pokemon {
+    width: 300px;
+    height: 120px;
+}
 h1 {
     color: black;
     font-size: 60px;
