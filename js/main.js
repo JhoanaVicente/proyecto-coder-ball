@@ -1,9 +1,9 @@
 let names = ["Telma", "Tatiana", "Irina S", "Jhoana", "Maribel", "Jezabel", "Irina G",
-    "Minerva", "Nadia", "Silvana", "Pamela", "Javi", "Gabriela", "Manuel",
+    "Minerva", "Nadia", "Cinthia", "Pamela", "Javi", "Gabriela", "Manuel",
     "Halima", "Nelly", "Ikram", "Lola"];
 
 let originalNames = ["Telma", "Tatiana", "Irina S", "Jhoana", "Maribel", "Jezabel", "Irina G",
-    "Minerva", "Nadia", "Silvana", "Pamela", "Javi", "Gabriela", "Manuel",
+    "Minerva", "Nadia", "Cinthia", "Pamela", "Javi", "Gabriela", "Manuel",
     "Halima", "Nelly", "Ikram", "Lola"];
 
 
