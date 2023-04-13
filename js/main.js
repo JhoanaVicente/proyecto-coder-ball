@@ -15,6 +15,7 @@ function generate() {
         let randomNumber = Math.floor(Math.random() * names.length);
         texto = names[randomNumber];
         names.splice(randomNumber, 1);
+        changePokemonImage(texto);
     }
 
     document.getElementById('result').innerHTML =
@@ -29,12 +30,7 @@ function reset() {
 
 
 
-function imagesPokemons() {
-    let images = ["Cinthia.png", "Gabriela.png", "Halima.png"];
-    let imagesLength = images.length;
-    let randomNumber = Math.random();
-    randomNumber = randomNumber * imagesLength;
-    randomNumber = Math.floor(randomNumber);
-    let choosenImage = images[randomNumber];
-    pokemons.src = choosenImage;
+function changePokemonImage(name) {
+    let imageName = "./img/pokemon/"+name+".png";
+    document.getElementById("pokemons").src = imageName;
 }
