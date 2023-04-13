@@ -72,13 +72,19 @@ h2 {
     margin-left: 100px;
     width: 275px;
 }
-    
+   
+.bola {
+    width: 200px;
+}
+
 .rotate {
     animation: rotation 4s;
 }
+
 .linear {
     animation-timing-function: linear;
 }
+
 .infinite {
     animation-iteration-count: infinite;
 }
