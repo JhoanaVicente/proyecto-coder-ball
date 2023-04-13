@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,13 @@
     <link rel="stylesheet" href="./style/style.css">
     <title>CODER BALL</title>
 </head>
+
 <body>
     <div class="container">
         <header class="header-main">
             <img src="./style/Logo1.PNG" alt="Logo">
             <h1>CODER BALL</h1>
-            <button class="btn_header">Reiniciar</button>
+            <button id="btn-reset" class="btn_header" onclick="reset()">Reiniciar</button>
         </header>
 
         <section class="pockemon-main">
@@ -43,9 +45,8 @@
                 <img src="./img/pokemon/pokebola.png" class="rotate linear infinite" width="200" height="200" />
                 
                 <h2>Result</h2>
-                <div class="result">
-                    <button>Random</button> 
-                </div>
+                <button class="btn" onclick="generate()">Jugar</button>
+                <div id="result"></div>
             </div>
 
             <div class="caracter_pockemon">
