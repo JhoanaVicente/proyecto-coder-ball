@@ -16,51 +16,42 @@
             <h1>CODER BALL</h1>
             <button id="btn-reset" class="btn_header" onclick="reset()">Reiniciar</button>
         </header>
-
-        <section class="pockemon-main">
+        <div class="pockemon-main">
             <div class="lista_participantes">
                 <h2>Lista de Participantes</h2>
-                <ul class="nombre">
-                    <li>Telma</li>
-                    <li>Tatiana</li>
-                    <li>Irina S</li>
-                    <li>Jhoana</li>
-                    <li>Maribel</li>
-                    <li>Jezabel</li>
-                    <li>Irina G</li>
-                    <li>Minerva</li>
-                    <li>Nadia</li>
-                    <li>Silvana</li>
-                    <li>Pamela</li>
-                    <li>Javi</li>
-                    <li>Gabriela</li>
-                    <li>Manuel</li>
-                    <li>Halima</li>
-                    <li>Nelly</li>
-                    <li>Ikram</li>
-                    <li>Lola</li>
-                </ul>
+                <div class="card-lista">
+                    <ul class="nombre">
+                        <li>Telma</li>
+                        <li>Tatiana</li>
+                        <li>Irina S</li>
+                        <li>Jhoana</li>
+                        <li>Maribel</li>
+                        <li>Jezabel</li>
+                        <li>Irina G</li>
+                        <li>Minerva</li>
+                        <li>Nadia</li>
+                        <li>Silvana</li>
+                        <li>Pamela</li>
+                        <li>Javi</li>
+                        <li>Gabriela</li>
+                        <li>Manuel</li>
+                        <li>Halima</li>
+                        <li>Nelly</li>
+                        <li>Ikram</li>
+                        <li>Lola</li>
+                    </ul>
+                </div>
             </div>
             <div class="pockebola">
-                <img src="./img/pokemon/pokebola.png" class="bola rotate linear infinite"/>
-                 <button class="btn" onclick="generate(); imagesPokemons()">Jugar</button>
+                <img src="./img/pokemon/pokebola.png" class="bola rotate linear infinite" />
+                <button class="btn" onclick="generate(); imagesPokemons()">Jugar</button>
                 <div id="result"></div>
             </div>
-
-                  <div class="card">
-                <!--<img src="./style/pickachu 3.png" alt="Pokemon">  -->
-                <img src="/img/pokemon/Javi.png" id="pokemons" alt="">
-                <h2>¿Quién está dentro de pokebola?</h2>
-
+            <div class="card">
+                <img src="/img/pokemon/Javi.png" id="pokemons" alt="pokemones">
+                <h2>¿Quién está dentro de la Pokebola?</h2>
             </div>
-
-
-
-
-        </section>
-
-
-
+        </div>
     </div>
     <script src="./js/main.js"></script>
 </body>
