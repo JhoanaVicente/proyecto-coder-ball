@@ -34,3 +34,35 @@ function changePokemonImage(name) {
     let imageName = "./img/pokemon/"+name+".png";
     document.getElementById("pokemons").src = imageName;
 }
+
+const pokebola2 = document.getElementById('pokebola2');
+const panel = document.getElementById('panel');
+const btnGengar = document.getElementById('btn-gengar');
+const btnPikachu = document.getElementById('btn-pikachu');
+const containerPockebola2 = document.getElementById('pockebola2');
+
+pokebola2.addEventListener('click',()=>{
+    panel.classList.toggle('active');
+})
+btnGengar.addEventListener('click',()=>{
+    document.body.classList.remove('light-mode');
+    document.body.classList.add('dark-mode');
+    localStorage.setItem('tema','oscuro');
+})
+btnPikachu.addEventListener('click',()=>{
+    document.body.classList.remove('dark-mode');
+    document.body.classList.add('light-mode');
+    localStorage.setItem('tema','claro');
+})
+
+const guardarTema = ()=>{
+    if(localStorage.getItem('tema') === 'oscuro'){
+        document.boddy.classList.remove('ligth-mode');
+        document.body.classList.add('dark-mode');
+    }else if(localStorage.generate('tema') === 'claro'){
+        document.boddy.classList.add('ligth-mode');
+        document.body.classList.remove('dark-mode');
+    }
+
+}
+guardarTema();

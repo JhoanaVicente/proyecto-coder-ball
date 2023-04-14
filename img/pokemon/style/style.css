@@ -17,7 +17,7 @@ body {
 }
 
 body.light-mode{
-    background: url(../background_image_1.png);
+    background: url(/background_image_1.png);
     --colorPulse1:rgba(0,0,0,0.85);
     --colorPulse2:rgba(0,0,0,0,);
     --colorCard: rgba(255,255,255,0.2);
@@ -30,7 +30,7 @@ body.light-mode{
 }
 
 body.dark-mode{
-    background-image: url(../imagen\ fondo\ oscuro.jpg);
+    background-image: url(/imagen\ fondo\ oscuro.jpg);
     --colorPulse1: rgba(255,255,255,0.85);
     --colorPulse2: rgba(255,255,255,,0);
     --colorCard: rgba(255,255,255,0.2);
