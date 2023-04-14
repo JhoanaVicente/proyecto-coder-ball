@@ -10,12 +10,11 @@ body {
     background-size: 100%;
     background-position: center;
     background-size: cover;
-    color: white;
     font-family: 'Inter', sans-serif;
 }
 
 body.light-mode{
-    background: url(../background_image_1.png);
+    background-image: url(/background_image_1.png);
     --colorPulse1:rgba(0,0,0,0.85);
     --colorPulse2:rgba(0,0,0,0,);
     --colorCard: rgba(255,255,255,0.2);
@@ -96,7 +95,6 @@ h3{
 .nombre {
     line-height: 20px;
     list-style-type: none;
-    color: black;
     font-weight: 750;  
 }
 
@@ -115,7 +113,6 @@ h3{
 }
 
 .resultNombre{
-    color: black;
     font-weight: 700;
     font-size: 30px;
     padding-top: 1em;
