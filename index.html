@@ -12,12 +12,12 @@
         <header class="header-main">
             <img class="logo-pokemon" src="./img/pokemon/LOGO POKEMON .png" alt="Logo">
             <h1>CODER BOLA</h1>
-            <button id="btn-reset" class="btn_header" onclick="reset()">Reiniciar</button>
+            <button id="btn-reset" class="btn" onclick="reset()">Reiniciar</button>
         </header>
         <div class="pockemon-main">
             <div class="lista_participantes">
                 <h2>Lista de Participantes</h2>
-                <div class="card-lista">
+                <div class="card">
                     <ul class="nombre">
                         <li>Telma</li>
                         <li>Tatiana</li>
@@ -42,12 +42,16 @@
             </div>
             <div class="pockebola">
                 <img src="./img/pokemon/pokebola.png" class="bola rotate linear infinite" />   
+                <div class="result-button">
+                    <button class="btn" onclick="generate(); imagesPokemons()">Jugar</button>
+                <div class="resultNombre" id="result"></div>
+                </div>
+                
             </div>
             <div class="card">
-                <h2>¿Quién está dentro de la Pokebola?</h2>
+                <h3>¿Quién está dentro de la Pokebola?</h3>
                 <img src="/img/pokemon/Javi.png" id="pokemons" alt="pokemones">
-                <button class="btn" onclick="generate(); imagesPokemons()">Jugar</button>
-                <div id="result"></div>
+                
             </div>
             <div class="container-pokebola2">
                 <div class="panel" id="panel">
