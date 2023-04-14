@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="./style/style.css">
     <title>The Wheel of the Doom</title>
 </head>
-
 <body>
     <div class="container">
         <header class="header-main">
@@ -45,17 +43,18 @@
             <div class="pockebola">
                 <img src="./img/pokemon/pokebola.png" class="bola rotate linear infinite" />   
             </div>
-            <div class="card">
-                <h2>¿Quién está dentro de la Pokebola?</h2>
-                <img src="/img/pokemon/Javi.png" id="pokemons" alt="pokemones">
-                <button class="btn" onclick="generate(); imagesPokemons()">Jugar</button>
-                <div id="result"></div>
+            <div class="car-pokemon-lista">
+                <h2 class="quien-esta">¿Quién está dentro de la Pokebola?</h2>
+                <div class="card">
+                    <img src="/img/pokemon/Javi.png" id="pokemons" alt="pokemones">
+                    <button class="btn" onclick="generate(); imagesPokemons()">Jugar</button>
+                    <div id="result"></div>
+                </div>
             </div>
             <div class="container-pokebola2">
                 <div class="panel" id="panel">
                     <img class="oscuro" id="btn-gengar" src="./img/pokemon/gengar n.png" alt="imagen gengar">
                     <img class="claro" id="btn-pikachu" src="./img/pokemon/pikachu dia.png" alt="imagen pikachu">
-
                 </div>
                 <img class="pokebola" id="pokebola2" src="./img/pokemon/pokebola.png" alt="imagen pokebola">
             </div>
@@ -63,5 +62,4 @@
     </div>
     <script src="./js/main.js"></script>
 </body>
-
 </html>

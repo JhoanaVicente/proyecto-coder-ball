@@ -1,6 +1,4 @@
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +6,7 @@
 }
 
 body {
-    background-image: url("./background_image_1.png");
+    background-image: url(/background_image_1.png);
     background-size: 100%;
     background-position: center;
     background-size: cover;
@@ -26,7 +24,6 @@ body.light-mode{
     --colorPanel: rgba(255,255,255,0.4);
     --sobraPanel: rgba(255,255,255,0.5);
     --hoverCard: rgba(255,255,255,0.5);
-
 }
 
 body.dark-mode{
@@ -39,7 +36,6 @@ body.dark-mode{
     --colorPanel: rgba(0,0,0,0.4);
     --sobraPanel: rgba(255,255,255,0.5);
     --hoverCard: rgba(255,255,255,0.1);
-
 }
 
 .header-main {
@@ -87,8 +83,7 @@ h1 {
     line-height: 20px;
     list-style-type: none;
     color: black;
-    font-weight: 750;
-    
+    font-weight: 750;  
 }
 
 .card-lista {
@@ -106,6 +101,11 @@ h1 {
 h2 {
     font-size: 30px;
     color: black;
+}
+
+.quien-esta {
+    text-align: center;
+    font-size: 23px;
 }
 
 .pockebola {
@@ -162,13 +162,10 @@ h2 {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-
-
 .card img{
     width: 250px;
     transition: 0.2s ease;
     filter: drop-shadow(0 2px 5px #fff);
-
     /*margin-top: 50px;*/
     /*margin: 8px auto;*/
 }
@@ -181,10 +178,9 @@ h2 {
     position: fixed;
     bottom: 15px;
     left: 15px;
-
 }
-.container-pokebola2 .panel{
 
+.container-pokebola2 .panel{
     position: absolute;
     background-color: var(--colorPanel);
     transition: .3s all;
@@ -198,12 +194,12 @@ h2 {
     align-items: center;
     justify-content: space-evenly;
     display: none;
-
 }
+
 .container-pokebola2 .panel.active{
     display: flex;
-
 }
+
 .container-pokebola2 .panel .oscuro{
     width: 70px;
     height: 70px;
@@ -212,8 +208,8 @@ h2 {
     border: 1px solid #fff;
     background-color: #000;
     transition: .3s all;
-
 }
+
 .container-pokebola2 .panel .claro{
     width: 70px;
     height: 70px;
@@ -222,27 +218,22 @@ h2 {
     border: 1px solid #fff;
     background-color: yellow;
     transition: .3s all;
-
 }
 
-
 .container-pokebola2 .pokebola{
-
     cursor: pointer;
     border-radius: 50%;
     width: 70px;
     filter: sepia(50%);
     transition: .4s ease;
     animation: pulse 0.5 infinite;
-    
-
 }
-.container-pokebola2 .pokebola:hover{
 
+.container-pokebola2 .pokebola:hover{
     filter: sepia(0);
     transition: .4s ease;
-
 }
+
 @keyframes pulse{
     0%{
         box-shadow: 0 0 0 0 var(--colorPulse1);
@@ -251,8 +242,7 @@ h2 {
         box-shadow: 0 0 0 25px var(--colorPulse2);
     }
     100%{
-        box-shadow: 0 0 0 0 var(--colorPulse2);
-        
+        box-shadow: 0 0 0 0 var(--colorPulse2);    
     }
     
 }
