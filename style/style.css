@@ -24,6 +24,7 @@ body.light-mode{
     --colorPanel: rgba(255,255,255,0.4);
     --sobraPanel: rgba(255,255,255,0.5);
     --hoverCard: rgba(255,255,255,0.5);
+    color: #000000;
 }
 
 body.dark-mode{
@@ -36,6 +37,7 @@ body.dark-mode{
     --colorPanel: rgba(0,0,0,0.4);
     --sobraPanel: rgba(255,255,255,0.5);
     --hoverCard: rgba(255,255,255,0.1);
+    color: #fff;
 }
 
 .header-main {
@@ -52,22 +54,18 @@ body.dark-mode{
 }
 
 h1 {
-    color: black;
     font-size: 60px;
     margin-right: 110px;
 }
 
 h2 {
     font-size: 30px;
-    color: black;
     text-align: center;
 }
 
 h3{
     font-size: 22px;
-    color: black;
     text-align: center;
-    
 }
 
 .btn {

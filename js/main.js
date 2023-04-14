@@ -49,7 +49,6 @@ pokebola2.addEventListener('click',()=>{
 btnGengar.addEventListener('click',()=>{
     document.body.classList.remove('light-mode');
     document.body.classList.add('dark-mode');
-    localStorage.setItem('tema','oscuro');
 })
 btnPikachu.addEventListener('click',()=>{
     document.body.classList.remove('dark-mode');
