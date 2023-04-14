@@ -26,6 +26,8 @@ function generate() {
 
 function reset() {
     // copiar de nuevo los nombres originales a la lista que usamos en generate
+    array = array2.slice()
+    document.getElementById("btn-reset") = "";
 }
 
 
@@ -34,3 +36,5 @@ function changePokemonImage(name) {
     let imageName = "./img/pokemon/"+name+".png";
     document.getElementById("pokemons").src = imageName;
 }
+
+
