@@ -1,0 +1,258 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./background_image_1.png");
+    background-size: 100%;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+body.light-mode{
+    background: url(/background_image_1.png);
+    --colorPulse1:rgba(0,0,0,0.85);
+    --colorPulse2:rgba(0,0,0,0,);
+    --colorCard: rgba(255,255,255,0.2);
+    --colorTextoCard: #000;
+    --sombraTexto:2px 2px 5px rgb(17,215,250);
+    --colorPanel: rgba(255,255,255,0.4);
+    --sobraPanel: rgba(255,255,255,0.5);
+    --hoverCard: rgba(255,255,255,0.5);
+
+}
+
+body.dark-mode{
+    background-image: url(/imagen\ fondo\ oscuro.jpg);
+    --colorPulse1: rgba(255,255,255,0.85);
+    --colorPulse2: rgba(255,255,255,,0);
+    --colorCard: rgba(255,255,255,0.2);
+    --colorTextoCard: #fff;
+    --sombraTexto: 2px 2px 5px #000;
+    --colorPanel: rgba(0,0,0,0.4);
+    --sobraPanel: rgba(255,255,255,0.5);
+    --hoverCard: rgba(255,255,255,0.1);
+
+}
+
+.header-main {
+    padding-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-pokemon {
+    width: 300px;
+    height: 120px;
+}
+h1 {
+    color: black;
+    font-size: 60px;
+}
+
+.btn_header {
+    background: blue;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    padding: 0.5em 2em;
+    border: 2px solid rgba(173, 216, 230, 0.006);
+    cursor: pointer;
+}
+
+.pockemon-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4em;
+    padding: 50px;
+}
+
+.lista_participantes {
+    text-align:center;
+}
+
+.nombre {
+    line-height: 20px;
+    list-style-type: none;
+    color: black;
+    font-weight: 750;
+    
+}
+
+.card-lista {
+    margin: 8px auto;
+    margin-bottom: 8%;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    box-shadow: 0 0 20px #000;
+    border-radius: 20px;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+    font-size: 30px;
+    color: black;
+}
+
+.pockebola {
+    padding-top: 250px;
+    margin-left: 100px;
+    width: 275px;
+}
+   
+.bola {
+    width: 200px;
+}
+
+.rotate {
+    animation: rotation 4s;
+}
+
+.linear {
+    animation-timing-function: linear;
+}
+
+.infinite {
+    animation-iteration-count: infinite;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.pikachu {
+    padding-top: 70px;
+    margin-left: 100px;
+    width: 250px;
+}
+
+.result {
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.card{
+    margin: 8px auto;
+    margin-bottom: 8%;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    box-shadow: 0 0 20px #000;
+    border-radius: 20px;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+.card img{
+    width: 250px;
+    transition: 0.2s ease;
+    filter: drop-shadow(0 2px 5px #fff);
+
+    /*margin-top: 50px;*/
+    /*margin: 8px auto;*/
+}
+
+.card:hover img{
+    transform: rotate(20deg);
+    transition: 0.2s ease;
+}
+.container-pokebola2{
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+
+}
+.container-pokebola2 .panel{
+
+    position: absolute;
+    background-color: var(--colorPanel);
+    transition: .3s all;
+    box-shadow: 1px 1px 5px;
+    width: 90%;
+    height: 180x;
+    border-radius: 15px;
+    transform: translateY(-100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    display: none;
+
+}
+.container-pokebola2 .panel.active{
+    display: flex;
+
+}
+.container-pokebola2 .panel .oscuro{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background-color: #000;
+    transition: .3s all;
+
+}
+.container-pokebola2 .panel .claro{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background-color: yellow;
+    transition: .3s all;
+
+}
+
+
+.container-pokebola2 .pokebola{
+
+    cursor: pointer;
+    border-radius: 50%;
+    width: 70px;
+    filter: sepia(50%);
+    transition: .4s ease;
+    animation: pulse 0.5 infinite;
+    
+
+}
+.container-pokebola2 .pokebola:hover{
+
+    filter: sepia(0);
+    transition: .4s ease;
+
+}
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 var(--colorPulse1);
+    }
+    50%{
+        box-shadow: 0 0 0 25px var(--colorPulse2);
+    }
+    100%{
+        box-shadow: 0 0 0 0 var(--colorPulse2);
+        
+    }
+    
+}
