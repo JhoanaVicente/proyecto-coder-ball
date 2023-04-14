@@ -101,12 +101,13 @@ h1 {
 h2 {
     font-size: 30px;
     color: black;
+    text-align: center;
 }
 
-.quien-esta {
+/*.quien-esta {
     text-align: center;
     font-size: 23px;
-}
+}*/
 
 .pockebola {
     padding-top: 250px;
