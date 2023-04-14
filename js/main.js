@@ -11,6 +11,7 @@ function generate() {
     let texto;
     if (names.length === 0) {
         texto = "Game Over!"
+        reset()
     } else {
         let randomNumber = Math.floor(Math.random() * names.length);
         texto = names[randomNumber];
@@ -26,8 +27,7 @@ function generate() {
 
 function reset() {
     // copiar de nuevo los nombres originales a la lista que usamos en generate
-    array = array2.slice()
-    document.getElementById("btn-reset") = "";
+    window.location.reload()
 }
 
 
